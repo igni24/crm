@@ -1,0 +1,480 @@
+// FontAwesome
+@font-face {
+	font-family: Font Awesome\ 5 Pro;
+	font-style: normal;
+	font-weight: 300;
+	src:	url("/fa-light-300.eot");
+	src:	url("#{$fa-font-path}/fa-light-300.eot?#iefix") format("embedded-opentype"),
+			url("#{$fa-font-path}/fa-light-300.woff2") format("woff2"),
+			url("#{$fa-font-path}/fa-light-300.woff") format("woff"),
+			url("#{$fa-font-path}/fa-light-300.ttf") format("truetype"),
+			url("#{$fa-font-path}/fa-light-300.svg#fontawesome") format("svg");
+}
+@font-face {
+	font-family: Font Awesome\ 5 Pro;
+	font-style: normal;
+	font-weight: 400;
+	src:	url("#{$fa-font-path}/fa-regular-400.eot");
+	src:	url("#{$fa-font-path}/fa-regular-400.eot?#iefix") format("embedded-opentype"),
+			url("#{$fa-font-path}/fa-regular-400.woff2") format("woff2"),
+			url("#{$fa-font-path}/fa-regular-400.woff") format("woff"),
+			url("#{$fa-font-path}/fa-regular-400.ttf") format("truetype"),
+			url("#{$fa-font-path}/fa-regular-400.svg#fontawesome") format("svg");
+}
+@font-face {
+	font-family: Font Awesome\ 5 Pro;
+	font-style: normal;
+	font-weight: 900;
+	src:	url("#{$fa-font-path}/fa-solid-900.eot");
+	src:	url("#{$fa-font-path}/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+			url("#{$fa-font-path}/fa-solid-900.woff2") format("woff2"),
+			url("#{$fa-font-path}/fa-solid-900.woff") format("woff"),
+			url("#{$fa-font-path}/fa-solid-900.ttf") format("truetype"),
+			url("#{$fa-font-path}/fa-solid-900.svg#fontawesome") format("svg");
+}
+.fa, .far, .fal, .fas { font-family: Font Awesome\ 5 Pro; }
+
+$fa-var-alarm-clock: \f34e;
+$fa-var-arrow-alt-from-bottom: \f346;
+$fa-var-arrow-alt-from-left: \f347;
+$fa-var-arrow-alt-from-right: \f348;
+$fa-var-arrow-alt-from-top: \f349;
+$fa-var-arrow-alt-square-down: \f350;
+$fa-var-arrow-alt-square-left: \f351;
+$fa-var-arrow-alt-square-right: \f352;
+$fa-var-arrow-alt-square-up: \f353;
+$fa-var-arrow-alt-to-bottom: \f34a;
+$fa-var-arrow-alt-to-left: \f34b;
+$fa-var-arrow-alt-to-right: \f34c;
+$fa-var-arrow-alt-to-top: \f34d;
+$fa-var-arrow-from-bottom: \f342;
+$fa-var-arrow-from-left: \f343;
+$fa-var-arrow-from-right: \f344;
+$fa-var-arrow-from-top: \f345;
+$fa-var-arrow-square-down: \f339;
+$fa-var-arrow-square-left: \f33a;
+$fa-var-arrow-square-right: \f33b;
+$fa-var-arrow-square-up: \f33c;
+$fa-var-arrow-to-bottom: \f33d;
+$fa-var-arrow-to-left: \f33e;
+$fa-var-arrow-to-right: \f340;
+$fa-var-arrow-to-top: \f341;
+$fa-var-arrows-h: \f07e;
+$fa-var-arrows-v: \f07d;
+$fa-var-badge-check: \f336;
+$fa-var-balance-scale-left: \f515;
+$fa-var-balance-scale-right: \f516;
+$fa-var-barcode-alt: \f463;
+$fa-var-barcode-read: \f464;
+$fa-var-barcode-scan: \f465;
+$fa-var-basketball-hoop: \f435;
+$fa-var-battery-bolt: \f376;
+$fa-var-battery-slash: \f377;
+$fa-var-blanket: \f498;
+$fa-var-book-heart: \f499;
+$fa-var-bowling-pins: \f437;
+$fa-var-box-alt: \f49a;
+$fa-var-box-check: \f467;
+$fa-var-box-fragile: \f49b;
+$fa-var-box-full: \f49c;
+$fa-var-box-heart: \f49d;
+$fa-var-box-up: \f49f;
+$fa-var-box-usd: \f4a0;
+$fa-var-boxes-alt: \f4a1;
+$fa-var-boxing-glove: \f438;
+$fa-var-browser: \f37e;
+$fa-var-calendar-edit: \f333;
+$fa-var-calendar-exclamation: \f334;
+$fa-var-camera-alt: \f332;
+$fa-var-caret-circle-down: \f32d;
+$fa-var-caret-circle-left: \f32e;
+$fa-var-caret-circle-right: \f330;
+$fa-var-caret-circle-up: \f331;
+$fa-var-chess-bishop-alt: \f43b;
+$fa-var-chess-clock: \f43d;
+$fa-var-chess-clock-alt: \f43e;
+$fa-var-chess-king-alt: \f440;
+$fa-var-chess-knight-alt: \f442;
+$fa-var-chess-pawn-alt: \f444;
+$fa-var-chess-queen-alt: \f446;
+$fa-var-chess-rook-alt: \f448;
+$fa-var-chevron-double-down: \f322;
+$fa-var-chevron-double-left: \f323;
+$fa-var-chevron-double-right: \f324;
+$fa-var-chevron-double-up: \f325;
+$fa-var-chevron-square-down: \f329;
+$fa-var-chevron-square-left: \f32a;
+$fa-var-chevron-square-right: \f32b;
+$fa-var-chevron-square-up: \f32c;
+$fa-var-code-commit: \f386;
+$fa-var-code-merge: \f387;
+$fa-var-comment-alt-check: \f4a2;
+$fa-var-comment-alt-dots: \f4a3;
+$fa-var-comment-alt-edit: \f4a4;
+$fa-var-comment-alt-exclamation: \f4a5;
+$fa-var-comment-alt-lines: \f4a6;
+$fa-var-comment-alt-minus: \f4a7;
+$fa-var-comment-alt-plus: \f4a8;
+$fa-var-comment-alt-slash: \f4a9;
+$fa-var-comment-alt-smile: \f4aa;
+$fa-var-comment-alt-times: \f4ab;
+$fa-var-comment-check: \f4ac;
+$fa-var-comment-edit: \f4ae;
+$fa-var-comment-exclamation: \f4af;
+$fa-var-comment-lines: \f4b0;
+$fa-var-comment-minus: \f4b1;
+$fa-var-comment-plus: \f4b2;
+$fa-var-comment-smile: \f4b4;
+$fa-var-comment-times: \f4b5;
+$fa-var-comments-alt: \f4b6;
+$fa-var-compress-alt: \f422;
+$fa-var-compress-wide: \f326;
+$fa-var-container-storage: \f4b7;
+$fa-var-conveyor-belt: \f46e;
+$fa-var-conveyor-belt-alt: \f46f;
+$fa-var-creative-commons-zero: \f4f3;
+$fa-var-credit-card-blank: \f389;
+$fa-var-credit-card-front: \f38a;
+$fa-var-cricket: \f449;
+$fa-var-curling: \f44a;
+$fa-var-desktop-alt: \f390;
+$fa-var-diamond: \f219;
+$fa-var-dolly-empty: \f473;
+$fa-var-dolly-flatbed-alt: \f475;
+$fa-var-dolly-flatbed-empty: \f476;
+$fa-var-ellipsis-h-alt: \f39b;
+$fa-var-ellipsis-v-alt: \f39c;
+$fa-var-exclamation-square: \f321;
+$fa-var-expand-alt: \f424;
+$fa-var-expand-wide: \f320;
+$fa-var-field-hockey: \f44c;
+$fa-var-file-check: \f316;
+$fa-var-file-edit: \f31c;
+$fa-var-file-exclamation: \f31a;
+$fa-var-file-minus: \f318;
+$fa-var-file-plus: \f319;
+$fa-var-file-times: \f317;
+$fa-var-film-alt: \f3a0;
+$fa-var-football-helmet: \f44f;
+$fa-var-forklift: \f47a;
+$fa-var-fragile: \f4bb;
+$fa-var-golf-club: \f451;
+$fa-var-h1: \f313;
+$fa-var-h2: \f314;
+$fa-var-h3: \f315;
+$fa-var-hand-heart: \f4bc;
+$fa-var-hand-holding-box: \f47b;
+$fa-var-hand-holding-seedling: \f4bf;
+$fa-var-hand-holding-water: \f4c1;
+$fa-var-hand-receiving: \f47c;
+$fa-var-hands-heart: \f4c3;
+$fa-var-hands-usd: \f4c5;
+$fa-var-handshake-alt: \f4c6;
+$fa-var-heart-circle: \f4c7;
+$fa-var-heart-square: \f4c8;
+$fa-var-hexagon: \f312;
+$fa-var-hockey-sticks: \f454;
+$fa-var-home-heart: \f4c9;
+$fa-var-inbox-in: \f310;
+$fa-var-inbox-out: \f311;
+$fa-var-industry-alt: \f3b3;
+$fa-var-info-square: \f30f;
+$fa-var-inventory: \f480;
+$fa-var-jack-o-lantern: \f30e;
+$fa-var-lamp: \f4ca;
+$fa-var-leaf-heart: \f4cb;
+$fa-var-lock-open-alt: \f3c2;
+$fa-var-long-arrow-down: \f175;
+$fa-var-long-arrow-left: \f177;
+$fa-var-long-arrow-right: \f178;
+$fa-var-long-arrow-up: \f176;
+$fa-var-loveseat: \f4cc;
+$fa-var-luchador: \f455;
+$fa-var-minus-hexagon: \f307;
+$fa-var-minus-octagon: \f308;
+$fa-var-mobile-android: \f3ce;
+$fa-var-mobile-android-alt: \f3cf;
+$fa-var-octagon: \f306;
+$fa-var-pallet-alt: \f483;
+$fa-var-pen-alt: \f305;
+$fa-var-pennant: \f456;
+$fa-var-person-carry: \f4cf;
+$fa-var-person-dolly: \f4d0;
+$fa-var-person-dolly-empty: \f4d1;
+$fa-var-phone-plus: \f4d2;
+$fa-var-plane-alt: \f3de;
+$fa-var-plus-hexagon: \f300;
+$fa-var-plus-octagon: \f301;
+$fa-var-question-square: \f2fd;
+$fa-var-racquet: \f45a;
+$fa-var-ramp-loading: \f4d4;
+$fa-var-rectangle-landscape: \f2fa;
+$fa-var-rectangle-portrait: \f2fb;
+$fa-var-rectangle-wide: \f2fc;
+$fa-var-repeat: \f363;
+$fa-var-repeat-1: \f365;
+$fa-var-repeat-1-alt: \f366;
+$fa-var-repeat-alt: \f364;
+$fa-var-retweet-alt: \f361;
+$fa-var-route: \f4d7;
+$fa-var-scanner: \f488;
+$fa-var-scanner-keyboard: \f489;
+$fa-var-scanner-touchscreen: \f48a;
+$fa-var-scrubber: \f2f8;
+$fa-var-share-all: \f367;
+$fa-var-shield-check: \f2f7;
+$fa-var-shipping-timed: \f48c;
+$fa-var-shuttlecock: \f45b;
+$fa-var-sliders-h-square: \f3f0;
+$fa-var-sliders-v: \f3f1;
+$fa-var-sliders-v-square: \f3f2;
+$fa-var-smile-plus: \f4da;
+$fa-var-spade: \f2f4;
+$fa-var-spinner-third: \f3f4;
+$fa-var-star-exclamation: \f2f3;
+$fa-var-tablet-android: \f3fb;
+$fa-var-tablet-android-alt: \f3fc;
+$fa-var-tablet-rugged: \f48f;
+$fa-var-tennis-ball: \f45e;
+$fa-var-times-hexagon: \f2ee;
+$fa-var-times-octagon: \f2f0;
+$fa-var-times-square: \f2d3;
+$fa-var-tree-alt: \f400;
+$fa-var-trophy-alt: \f2eb;
+$fa-var-truck-container: \f4dc;
+$fa-var-truck-couch: \f4dd;
+$fa-var-truck-ramp: \f4e0;
+$fa-var-tv-retro: \f401;
+$fa-var-usd-circle: \f2e8;
+$fa-var-usd-square: \f2e9;
+$fa-var-utensil-fork: \f2e3;
+$fa-var-utensil-knife: \f2e4;
+$fa-var-utensils-alt: \f2e6;
+$fa-var-video-plus: \f4e1;
+$fa-var-volume-mute: \f2e2;
+$fa-var-warehouse-alt: \f495;
+$fa-var-whistle: \f460;
+$fa-var-window-alt: \f40f;
+
+
+.#{$fa-css-prefix}-alarm-clock:before {content: fa-content($fa-var-alarm-clock); } 
+.#{$fa-css-prefix}-arrow-alt-from-bottom:before {content: fa-content($fa-var-arrow-alt-from-bottom); } 
+.#{$fa-css-prefix}-arrow-alt-from-left:before {content: fa-content($fa-var-arrow-alt-from-left); } 
+.#{$fa-css-prefix}-arrow-alt-from-right:before {content: fa-content($fa-var-arrow-alt-from-right); } 
+.#{$fa-css-prefix}-arrow-alt-from-top:before {content: fa-content($fa-var-arrow-alt-from-top); } 
+.#{$fa-css-prefix}-arrow-alt-square-down:before {content: fa-content($fa-var-arrow-alt-square-down); } 
+.#{$fa-css-prefix}-arrow-alt-square-left:before {content: fa-content($fa-var-arrow-alt-square-left); } 
+.#{$fa-css-prefix}-arrow-alt-square-right:before {content: fa-content($fa-var-arrow-alt-square-right); } 
+.#{$fa-css-prefix}-arrow-alt-square-up:before {content: fa-content($fa-var-arrow-alt-square-up); } 
+.#{$fa-css-prefix}-arrow-alt-to-bottom:before {content: fa-content($fa-var-arrow-alt-to-bottom); } 
+.#{$fa-css-prefix}-arrow-alt-to-left:before {content: fa-content($fa-var-arrow-alt-to-left); } 
+.#{$fa-css-prefix}-arrow-alt-to-right:before {content: fa-content($fa-var-arrow-alt-to-right); } 
+.#{$fa-css-prefix}-arrow-alt-to-top:before {content: fa-content($fa-var-arrow-alt-to-top); } 
+.#{$fa-css-prefix}-arrow-from-bottom:before {content: fa-content($fa-var-arrow-from-bottom); } 
+.#{$fa-css-prefix}-arrow-from-left:before {content: fa-content($fa-var-arrow-from-left); } 
+.#{$fa-css-prefix}-arrow-from-right:before {content: fa-content($fa-var-arrow-from-right); } 
+.#{$fa-css-prefix}-arrow-from-top:before {content: fa-content($fa-var-arrow-from-top); } 
+.#{$fa-css-prefix}-arrow-square-down:before {content: fa-content($fa-var-arrow-square-down); } 
+.#{$fa-css-prefix}-arrow-square-left:before {content: fa-content($fa-var-arrow-square-left); } 
+.#{$fa-css-prefix}-arrow-square-right:before {content: fa-content($fa-var-arrow-square-right); } 
+.#{$fa-css-prefix}-arrow-square-up:before {content: fa-content($fa-var-arrow-square-up); } 
+.#{$fa-css-prefix}-arrow-to-bottom:before {content: fa-content($fa-var-arrow-to-bottom); } 
+.#{$fa-css-prefix}-arrow-to-left:before {content: fa-content($fa-var-arrow-to-left); } 
+.#{$fa-css-prefix}-arrow-to-right:before {content: fa-content($fa-var-arrow-to-right); } 
+.#{$fa-css-prefix}-arrow-to-top:before {content: fa-content($fa-var-arrow-to-top); } 
+.#{$fa-css-prefix}-arrows-h:before {content: fa-content($fa-var-arrows-h); } 
+.#{$fa-css-prefix}-arrows-v:before {content: fa-content($fa-var-arrows-v); } 
+.#{$fa-css-prefix}-badge-check:before {content: fa-content($fa-var-badge-check); } 
+.#{$fa-css-prefix}-balance-scale-left:before {content: fa-content($fa-var-balance-scale-left); } 
+.#{$fa-css-prefix}-balance-scale-right:before {content: fa-content($fa-var-balance-scale-right); } 
+.#{$fa-css-prefix}-barcode-alt:before {content: fa-content($fa-var-barcode-alt); } 
+.#{$fa-css-prefix}-barcode-read:before {content: fa-content($fa-var-barcode-read); } 
+.#{$fa-css-prefix}-barcode-scan:before {content: fa-content($fa-var-barcode-scan); } 
+.#{$fa-css-prefix}-basketball-hoop:before {content: fa-content($fa-var-basketball-hoop); } 
+.#{$fa-css-prefix}-battery-bolt:before {content: fa-content($fa-var-battery-bolt); } 
+.#{$fa-css-prefix}-battery-slash:before {content: fa-content($fa-var-battery-slash); } 
+.#{$fa-css-prefix}-blanket:before {content: fa-content($fa-var-blanket); } 
+.#{$fa-css-prefix}-book-heart:before {content: fa-content($fa-var-book-heart); } 
+.#{$fa-css-prefix}-bowling-pins:before {content: fa-content($fa-var-bowling-pins); } 
+.#{$fa-css-prefix}-box-alt:before {content: fa-content($fa-var-box-alt); } 
+.#{$fa-css-prefix}-box-check:before {content: fa-content($fa-var-box-check); } 
+.#{$fa-css-prefix}-box-fragile:before {content: fa-content($fa-var-box-fragile); } 
+.#{$fa-css-prefix}-box-full:before {content: fa-content($fa-var-box-full); } 
+.#{$fa-css-prefix}-box-heart:before {content: fa-content($fa-var-box-heart); } 
+.#{$fa-css-prefix}-box-up:before {content: fa-content($fa-var-box-up); } 
+.#{$fa-css-prefix}-box-usd:before {content: fa-content($fa-var-box-usd); } 
+.#{$fa-css-prefix}-boxes-alt:before {content: fa-content($fa-var-boxes-alt); } 
+.#{$fa-css-prefix}-boxing-glove:before {content: fa-content($fa-var-boxing-glove); } 
+.#{$fa-css-prefix}-browser:before {content: fa-content($fa-var-browser); } 
+.#{$fa-css-prefix}-calendar-edit:before {content: fa-content($fa-var-calendar-edit); } 
+.#{$fa-css-prefix}-calendar-exclamation:before {content: fa-content($fa-var-calendar-exclamation); } 
+.#{$fa-css-prefix}-camera-alt:before {content: fa-content($fa-var-camera-alt); } 
+.#{$fa-css-prefix}-caret-circle-down:before {content: fa-content($fa-var-caret-circle-down); } 
+.#{$fa-css-prefix}-caret-circle-left:before {content: fa-content($fa-var-caret-circle-left); } 
+.#{$fa-css-prefix}-caret-circle-right:before {content: fa-content($fa-var-caret-circle-right); } 
+.#{$fa-css-prefix}-caret-circle-up:before {content: fa-content($fa-var-caret-circle-up); } 
+.#{$fa-css-prefix}-chess-bishop-alt:before {content: fa-content($fa-var-chess-bishop-alt); } 
+.#{$fa-css-prefix}-chess-clock:before {content: fa-content($fa-var-chess-clock); } 
+.#{$fa-css-prefix}-chess-clock-alt:before {content: fa-content($fa-var-chess-clock-alt); } 
+.#{$fa-css-prefix}-chess-king-alt:before {content: fa-content($fa-var-chess-king-alt); } 
+.#{$fa-css-prefix}-chess-knight-alt:before {content: fa-content($fa-var-chess-knight-alt); } 
+.#{$fa-css-prefix}-chess-pawn-alt:before {content: fa-content($fa-var-chess-pawn-alt); } 
+.#{$fa-css-prefix}-chess-queen-alt:before {content: fa-content($fa-var-chess-queen-alt); } 
+.#{$fa-css-prefix}-chess-rook-alt:before {content: fa-content($fa-var-chess-rook-alt); } 
+.#{$fa-css-prefix}-chevron-double-down:before {content: fa-content($fa-var-chevron-double-down); } 
+.#{$fa-css-prefix}-chevron-double-left:before {content: fa-content($fa-var-chevron-double-left); } 
+.#{$fa-css-prefix}-chevron-double-right:before {content: fa-content($fa-var-chevron-double-right); } 
+.#{$fa-css-prefix}-chevron-double-up:before {content: fa-content($fa-var-chevron-double-up); } 
+.#{$fa-css-prefix}-chevron-square-down:before {content: fa-content($fa-var-chevron-square-down); } 
+.#{$fa-css-prefix}-chevron-square-left:before {content: fa-content($fa-var-chevron-square-left); } 
+.#{$fa-css-prefix}-chevron-square-right:before {content: fa-content($fa-var-chevron-square-right); } 
+.#{$fa-css-prefix}-chevron-square-up:before {content: fa-content($fa-var-chevron-square-up); } 
+.#{$fa-css-prefix}-code-commit:before {content: fa-content($fa-var-code-commit); } 
+.#{$fa-css-prefix}-code-merge:before {content: fa-content($fa-var-code-merge); } 
+.#{$fa-css-prefix}-comment-alt-check:before {content: fa-content($fa-var-comment-alt-check); } 
+.#{$fa-css-prefix}-comment-alt-dots:before {content: fa-content($fa-var-comment-alt-dots); } 
+.#{$fa-css-prefix}-comment-alt-edit:before {content: fa-content($fa-var-comment-alt-edit); } 
+.#{$fa-css-prefix}-comment-alt-exclamation:before {content: fa-content($fa-var-comment-alt-exclamation); } 
+.#{$fa-css-prefix}-comment-alt-lines:before {content: fa-content($fa-var-comment-alt-lines); } 
+.#{$fa-css-prefix}-comment-alt-minus:before {content: fa-content($fa-var-comment-alt-minus); } 
+.#{$fa-css-prefix}-comment-alt-plus:before {content: fa-content($fa-var-comment-alt-plus); } 
+.#{$fa-css-prefix}-comment-alt-slash:before {content: fa-content($fa-var-comment-alt-slash); } 
+.#{$fa-css-prefix}-comment-alt-smile:before {content: fa-content($fa-var-comment-alt-smile); } 
+.#{$fa-css-prefix}-comment-alt-times:before {content: fa-content($fa-var-comment-alt-times); } 
+.#{$fa-css-prefix}-comment-check:before {content: fa-content($fa-var-comment-check); } 
+.#{$fa-css-prefix}-comment-edit:before {content: fa-content($fa-var-comment-edit); } 
+.#{$fa-css-prefix}-comment-exclamation:before {content: fa-content($fa-var-comment-exclamation); } 
+.#{$fa-css-prefix}-comment-lines:before {content: fa-content($fa-var-comment-lines); } 
+.#{$fa-css-prefix}-comment-minus:before {content: fa-content($fa-var-comment-minus); } 
+.#{$fa-css-prefix}-comment-plus:before {content: fa-content($fa-var-comment-plus); } 
+.#{$fa-css-prefix}-comment-smile:before {content: fa-content($fa-var-comment-smile); } 
+.#{$fa-css-prefix}-comment-times:before {content: fa-content($fa-var-comment-times); } 
+.#{$fa-css-prefix}-comments-alt:before {content: fa-content($fa-var-comments-alt); } 
+.#{$fa-css-prefix}-compress-alt:before {content: fa-content($fa-var-compress-alt); } 
+.#{$fa-css-prefix}-compress-wide:before {content: fa-content($fa-var-compress-wide); } 
+.#{$fa-css-prefix}-container-storage:before {content: fa-content($fa-var-container-storage); } 
+.#{$fa-css-prefix}-conveyor-belt:before {content: fa-content($fa-var-conveyor-belt); } 
+.#{$fa-css-prefix}-conveyor-belt-alt:before {content: fa-content($fa-var-conveyor-belt-alt); } 
+.#{$fa-css-prefix}-creative-commons-zero:before {content: fa-content($fa-var-creative-commons-zero); } 
+.#{$fa-css-prefix}-credit-card-blank:before {content: fa-content($fa-var-credit-card-blank); } 
+.#{$fa-css-prefix}-credit-card-front:before {content: fa-content($fa-var-credit-card-front); } 
+.#{$fa-css-prefix}-cricket:before {content: fa-content($fa-var-cricket); } 
+.#{$fa-css-prefix}-curling:before {content: fa-content($fa-var-curling); } 
+.#{$fa-css-prefix}-desktop-alt:before {content: fa-content($fa-var-desktop-alt); } 
+.#{$fa-css-prefix}-diamond:before {content: fa-content($fa-var-diamond); } 
+.#{$fa-css-prefix}-dolly-empty:before {content: fa-content($fa-var-dolly-empty); } 
+.#{$fa-css-prefix}-dolly-flatbed-alt:before {content: fa-content($fa-var-dolly-flatbed-alt); } 
+.#{$fa-css-prefix}-dolly-flatbed-empty:before {content: fa-content($fa-var-dolly-flatbed-empty); } 
+.#{$fa-css-prefix}-ellipsis-h-alt:before {content: fa-content($fa-var-ellipsis-h-alt); } 
+.#{$fa-css-prefix}-ellipsis-v-alt:before {content: fa-content($fa-var-ellipsis-v-alt); } 
+.#{$fa-css-prefix}-exclamation-square:before {content: fa-content($fa-var-exclamation-square); } 
+.#{$fa-css-prefix}-expand-alt:before {content: fa-content($fa-var-expand-alt); } 
+.#{$fa-css-prefix}-expand-wide:before {content: fa-content($fa-var-expand-wide); } 
+.#{$fa-css-prefix}-field-hockey:before {content: fa-content($fa-var-field-hockey); } 
+.#{$fa-css-prefix}-file-check:before {content: fa-content($fa-var-file-check); } 
+.#{$fa-css-prefix}-file-edit:before {content: fa-content($fa-var-file-edit); } 
+.#{$fa-css-prefix}-file-exclamation:before {content: fa-content($fa-var-file-exclamation); } 
+.#{$fa-css-prefix}-file-minus:before {content: fa-content($fa-var-file-minus); } 
+.#{$fa-css-prefix}-file-plus:before {content: fa-content($fa-var-file-plus); } 
+.#{$fa-css-prefix}-file-times:before {content: fa-content($fa-var-file-times); } 
+.#{$fa-css-prefix}-film-alt:before {content: fa-content($fa-var-film-alt); } 
+.#{$fa-css-prefix}-football-helmet:before {content: fa-content($fa-var-football-helmet); } 
+.#{$fa-css-prefix}-forklift:before {content: fa-content($fa-var-forklift); } 
+.#{$fa-css-prefix}-fragile:before {content: fa-content($fa-var-fragile); } 
+.#{$fa-css-prefix}-golf-club:before {content: fa-content($fa-var-golf-club); } 
+.#{$fa-css-prefix}-h1:before {content: fa-content($fa-var-h1); } 
+.#{$fa-css-prefix}-h2:before {content: fa-content($fa-var-h2); } 
+.#{$fa-css-prefix}-h3:before {content: fa-content($fa-var-h3); } 
+.#{$fa-css-prefix}-hand-heart:before {content: fa-content($fa-var-hand-heart); } 
+.#{$fa-css-prefix}-hand-holding-box:before {content: fa-content($fa-var-hand-holding-box); } 
+.#{$fa-css-prefix}-hand-holding-seedling:before {content: fa-content($fa-var-hand-holding-seedling); } 
+.#{$fa-css-prefix}-hand-holding-water:before {content: fa-content($fa-var-hand-holding-water); } 
+.#{$fa-css-prefix}-hand-receiving:before {content: fa-content($fa-var-hand-receiving); } 
+.#{$fa-css-prefix}-hands-heart:before {content: fa-content($fa-var-hands-heart); } 
+.#{$fa-css-prefix}-hands-usd:before {content: fa-content($fa-var-hands-usd); } 
+.#{$fa-css-prefix}-handshake-alt:before {content: fa-content($fa-var-handshake-alt); } 
+.#{$fa-css-prefix}-heart-circle:before {content: fa-content($fa-var-heart-circle); } 
+.#{$fa-css-prefix}-heart-square:before {content: fa-content($fa-var-heart-square); } 
+.#{$fa-css-prefix}-hexagon:before {content: fa-content($fa-var-hexagon); } 
+.#{$fa-css-prefix}-hockey-sticks:before {content: fa-content($fa-var-hockey-sticks); } 
+.#{$fa-css-prefix}-home-heart:before {content: fa-content($fa-var-home-heart); } 
+.#{$fa-css-prefix}-inbox-in:before {content: fa-content($fa-var-inbox-in); } 
+.#{$fa-css-prefix}-inbox-out:before {content: fa-content($fa-var-inbox-out); } 
+.#{$fa-css-prefix}-industry-alt:before {content: fa-content($fa-var-industry-alt); } 
+.#{$fa-css-prefix}-info-square:before {content: fa-content($fa-var-info-square); } 
+.#{$fa-css-prefix}-inventory:before {content: fa-content($fa-var-inventory); } 
+.#{$fa-css-prefix}-jack-o-lantern:before {content: fa-content($fa-var-jack-o-lantern); } 
+.#{$fa-css-prefix}-lamp:before {content: fa-content($fa-var-lamp); } 
+.#{$fa-css-prefix}-leaf-heart:before {content: fa-content($fa-var-leaf-heart); } 
+.#{$fa-css-prefix}-lock-open-alt:before {content: fa-content($fa-var-lock-open-alt); } 
+.#{$fa-css-prefix}-long-arrow-down:before {content: fa-content($fa-var-long-arrow-down); } 
+.#{$fa-css-prefix}-long-arrow-left:before {content: fa-content($fa-var-long-arrow-left); } 
+.#{$fa-css-prefix}-long-arrow-right:before {content: fa-content($fa-var-long-arrow-right); } 
+.#{$fa-css-prefix}-long-arrow-up:before {content: fa-content($fa-var-long-arrow-up); } 
+.#{$fa-css-prefix}-loveseat:before {content: fa-content($fa-var-loveseat); } 
+.#{$fa-css-prefix}-luchador:before {content: fa-content($fa-var-luchador); } 
+.#{$fa-css-prefix}-minus-hexagon:before {content: fa-content($fa-var-minus-hexagon); } 
+.#{$fa-css-prefix}-minus-octagon:before {content: fa-content($fa-var-minus-octagon); } 
+.#{$fa-css-prefix}-mobile-android:before {content: fa-content($fa-var-mobile-android); } 
+.#{$fa-css-prefix}-mobile-android-alt:before {content: fa-content($fa-var-mobile-android-alt); } 
+.#{$fa-css-prefix}-octagon:before {content: fa-content($fa-var-octagon); } 
+.#{$fa-css-prefix}-pallet-alt:before {content: fa-content($fa-var-pallet-alt); } 
+.#{$fa-css-prefix}-pen-alt:before {content: fa-content($fa-var-pen-alt); } 
+.#{$fa-css-prefix}-pennant:before {content: fa-content($fa-var-pennant); } 
+.#{$fa-css-prefix}-person-carry:before {content: fa-content($fa-var-person-carry); } 
+.#{$fa-css-prefix}-person-dolly:before {content: fa-content($fa-var-person-dolly); } 
+.#{$fa-css-prefix}-person-dolly-empty:before {content: fa-content($fa-var-person-dolly-empty); } 
+.#{$fa-css-prefix}-phone-plus:before {content: fa-content($fa-var-phone-plus); } 
+.#{$fa-css-prefix}-plane-alt:before {content: fa-content($fa-var-plane-alt); } 
+.#{$fa-css-prefix}-plus-hexagon:before {content: fa-content($fa-var-plus-hexagon); } 
+.#{$fa-css-prefix}-plus-octagon:before {content: fa-content($fa-var-plus-octagon); } 
+.#{$fa-css-prefix}-question-square:before {content: fa-content($fa-var-question-square); } 
+.#{$fa-css-prefix}-racquet:before {content: fa-content($fa-var-racquet); } 
+.#{$fa-css-prefix}-ramp-loading:before {content: fa-content($fa-var-ramp-loading); } 
+.#{$fa-css-prefix}-rectangle-landscape:before {content: fa-content($fa-var-rectangle-landscape); } 
+.#{$fa-css-prefix}-rectangle-portrait:before {content: fa-content($fa-var-rectangle-portrait); } 
+.#{$fa-css-prefix}-rectangle-wide:before {content: fa-content($fa-var-rectangle-wide); } 
+.#{$fa-css-prefix}-repeat:before {content: fa-content($fa-var-repeat); } 
+.#{$fa-css-prefix}-repeat-1:before {content: fa-content($fa-var-repeat-1); } 
+.#{$fa-css-prefix}-repeat-1-alt:before {content: fa-content($fa-var-repeat-1-alt); } 
+.#{$fa-css-prefix}-repeat-alt:before {content: fa-content($fa-var-repeat-alt); } 
+.#{$fa-css-prefix}-retweet-alt:before {content: fa-content($fa-var-retweet-alt); } 
+.#{$fa-css-prefix}-route:before {content: fa-content($fa-var-route); } 
+.#{$fa-css-prefix}-scanner:before {content: fa-content($fa-var-scanner); } 
+.#{$fa-css-prefix}-scanner-keyboard:before {content: fa-content($fa-var-scanner-keyboard); } 
+.#{$fa-css-prefix}-scanner-touchscreen:before {content: fa-content($fa-var-scanner-touchscreen); } 
+.#{$fa-css-prefix}-scrubber:before {content: fa-content($fa-var-scrubber); } 
+.#{$fa-css-prefix}-share-all:before {content: fa-content($fa-var-share-all); } 
+.#{$fa-css-prefix}-shield-check:before {content: fa-content($fa-var-shield-check); } 
+.#{$fa-css-prefix}-shipping-timed:before {content: fa-content($fa-var-shipping-timed); } 
+.#{$fa-css-prefix}-shuttlecock:before {content: fa-content($fa-var-shuttlecock); } 
+.#{$fa-css-prefix}-sliders-h-square:before {content: fa-content($fa-var-sliders-h-square); } 
+.#{$fa-css-prefix}-sliders-v:before {content: fa-content($fa-var-sliders-v); } 
+.#{$fa-css-prefix}-sliders-v-square:before {content: fa-content($fa-var-sliders-v-square); } 
+.#{$fa-css-prefix}-smile-plus:before {content: fa-content($fa-var-smile-plus); } 
+.#{$fa-css-prefix}-spade:before {content: fa-content($fa-var-spade); } 
+.#{$fa-css-prefix}-spinner-third:before {content: fa-content($fa-var-spinner-third); } 
+.#{$fa-css-prefix}-star-exclamation:before {content: fa-content($fa-var-star-exclamation); } 
+.#{$fa-css-prefix}-tablet-android:before {content: fa-content($fa-var-tablet-android); } 
+.#{$fa-css-prefix}-tablet-android-alt:before {content: fa-content($fa-var-tablet-android-alt); } 
+.#{$fa-css-prefix}-tablet-rugged:before {content: fa-content($fa-var-tablet-rugged); } 
+.#{$fa-css-prefix}-tennis-ball:before {content: fa-content($fa-var-tennis-ball); } 
+.#{$fa-css-prefix}-times-hexagon:before {content: fa-content($fa-var-times-hexagon); } 
+.#{$fa-css-prefix}-times-octagon:before {content: fa-content($fa-var-times-octagon); } 
+.#{$fa-css-prefix}-times-square:before {content: fa-content($fa-var-times-square); } 
+.#{$fa-css-prefix}-tree-alt:before {content: fa-content($fa-var-tree-alt); } 
+.#{$fa-css-prefix}-trophy-alt:before {content: fa-content($fa-var-trophy-alt); } 
+.#{$fa-css-prefix}-truck-container:before {content: fa-content($fa-var-truck-container); } 
+.#{$fa-css-prefix}-truck-couch:before {content: fa-content($fa-var-truck-couch); } 
+.#{$fa-css-prefix}-truck-ramp:before {content: fa-content($fa-var-truck-ramp); } 
+.#{$fa-css-prefix}-tv-retro:before {content: fa-content($fa-var-tv-retro); } 
+.#{$fa-css-prefix}-usd-circle:before {content: fa-content($fa-var-usd-circle); } 
+.#{$fa-css-prefix}-usd-square:before {content: fa-content($fa-var-usd-square); } 
+.#{$fa-css-prefix}-utensil-fork:before {content: fa-content($fa-var-utensil-fork); } 
+.#{$fa-css-prefix}-utensil-knife:before {content: fa-content($fa-var-utensil-knife); } 
+.#{$fa-css-prefix}-utensils-alt:before {content: fa-content($fa-var-utensils-alt); } 
+.#{$fa-css-prefix}-video-plus:before {content: fa-content($fa-var-video-plus); } 
+.#{$fa-css-prefix}-volume-mute:before {content: fa-content($fa-var-volume-mute); } 
+.#{$fa-css-prefix}-warehouse-alt:before {content: fa-content($fa-var-warehouse-alt); } 
+.#{$fa-css-prefix}-whistle:before {content: fa-content($fa-var-whistle); } 
+.#{$fa-css-prefix}-window-alt:before {content: fa-content($fa-var-window-alt); } 

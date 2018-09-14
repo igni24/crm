@@ -1,0 +1,24 @@
+/* BOOTSTRAP */
+$transparent: rgba(255, 255, 255, 0);
+$colors2: ();
+$colors2: map-merge((
+	"transparent": $transparent
+), $colors2);
+$theme-colors2: ();
+$theme-colors2: map-merge((
+	"transparent": $transparent
+), $theme-colors2);
+
+@each $parent, $color in $theme-colors2 {
+	.bg-#{$parent} {
+		background-color: $color !important;
+	}
+
+	a.bg-#{$parent},
+	button.bg-#{$parent} {
+		&:hover,
+		&:focus {
+			background-color: darken($color, 10%) !important;
+		}
+	}
+}

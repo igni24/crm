@@ -24,37 +24,10 @@
 	"buffers":
 	[
 		{
-			"file": "resources/assets/sass/layout/_login.scss",
+			"file": "public/lib/bootstrap/js/bootstrap.bundle.js",
 			"settings":
 			{
-				"buffer_size": 593,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "resources/assets/sass/components/_forms.scss",
-			"settings":
-			{
-				"buffer_size": 411,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "resources/assets/sass/app.scss",
-			"settings":
-			{
-				"buffer_size": 339,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/views/auth/login.blade.php",
-			"settings":
-			{
-				"buffer_size": 1315,
+				"buffer_size": 212343,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -107,6 +80,8 @@
 		"/C/Users/ignas/Desktop/crm",
 		"/C/Users/ignas/Desktop/crm/public",
 		"/C/Users/ignas/Desktop/crm/public/js",
+		"/C/Users/ignas/Desktop/crm/public/lib",
+		"/C/Users/ignas/Desktop/crm/public/lib/bootstrap",
 		"/C/Users/ignas/Desktop/crm/resources",
 		"/C/Users/ignas/Desktop/crm/resources/assets",
 		"/C/Users/ignas/Desktop/crm/resources/assets/sass",
@@ -116,12 +91,14 @@
 	],
 	"file_history":
 	[
+		"/C/Users/ignas/Desktop/crm/resources/views/auth/login.blade.php",
+		"/C/Users/ignas/Desktop/crm/resources/assets/sass/app.scss",
+		"/C/Users/ignas/Desktop/crm/resources/assets/sass/components/_forms.scss",
+		"/C/Users/ignas/Desktop/crm/resources/assets/sass/layout/_login.scss",
 		"/C/Users/ignas/Desktop/crm/.vscode/settings.json",
 		"/C/Users/ignas/Desktop/crm/resources/assets/sass/helpers/_extend.scss",
 		"/C/Users/ignas/Desktop/crm/resources/assets/sass/helpers/_colors.scss",
 		"/C/Users/ignas/Desktop/crm/resources/assets/sass/helpers/_variables.scss",
-		"/C/Users/ignas/Desktop/crm/resources/assets/sass/app.scss",
-		"/C/Users/ignas/Desktop/crm/resources/assets/sass/layout/_login.scss",
 		"/C/Users/ignas/Desktop/crm/gulpfile.js",
 		"/C/Users/ignas/Desktop/NODEJS/gulpfile.js",
 		"/C/Users/ignas/Desktop/install Larabel.txt",
@@ -134,7 +111,6 @@
 		"/C/Users/ignas/Desktop/crm/composer.json",
 		"/C/Users/ignas/Desktop/NODEJS/package.json",
 		"/C/Users/ignas/Desktop/crm/public/lib/bootstrap/mixins/_hover.scss",
-		"/C/Users/ignas/Desktop/crm/resources/views/auth/login.blade.php",
 		"/C/Users/ignas/Desktop/crm/package-lock.json",
 		"/C/Users/ignas/Desktop/crm/public/lib/bootstrap/mixins/_float.scss",
 		"/C/Users/ignas/Desktop/crm/public/lib/bootstrap/mixins/_background-variant.scss",
@@ -216,6 +192,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"theme-color",
 			"gutil",
 			"stylish",
 			"jshint",
@@ -283,121 +260,35 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "resources/assets/sass/layout/_login.scss",
+					"file": "public/lib/bootstrap/js/bootstrap.bundle.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 593,
+						"buffer_size": 212343,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								588,
-								588
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "resources/assets/sass/components/_forms.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 411,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								183,
-								183
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 60263.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "resources/assets/sass/app.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 339,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								293,
-								293
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "resources/views/auth/login.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1315,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1057,
-								1057
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
 					"type": "text"
 				}
 			]

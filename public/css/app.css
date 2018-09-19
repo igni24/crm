@@ -2,6 +2,9 @@
 html,
 body {
   height: 100%; }
+  html *:focus,
+  body *:focus {
+    outline: unset; }
 
 /* Extend external frameworks */
 /* BOOTSTRAP */
@@ -12,6 +15,19 @@ a.bg-transparent:hover, a.bg-transparent:focus,
 button.bg-transparent:hover,
 button.bg-transparent:focus {
   background-color: rgba(230, 230, 230, 0) !important; }
+
+.help-block a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent; }
+  .help-block a:hover {
+    color: #0056b3;
+    text-decoration: none; }
+
+.help-block {
+  display: block;
+  margin-top: .25rem;
+  color: #6c757d; }
 
 .form-check {
   padding-left: 1.5rem; }
@@ -63,3 +79,5 @@ button.bg-transparent:focus {
     -webkit-border-radius: 20px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.3); }
+  #formLogin .help-block {
+    text-align: right; }

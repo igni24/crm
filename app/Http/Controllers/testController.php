@@ -10,6 +10,10 @@ class testController extends Controller {
 	}
 
 	public function test2($param) {
-		return "hello controller with param: " . $param;
+		return view('user.inventario')->with('mensaje', 'Su Articulo ha Sido Publicado');
+	}
+
+	public function loadModal($id) {
+		return view('ajax',['data'=>$ifAnyData]);
 	}
 }

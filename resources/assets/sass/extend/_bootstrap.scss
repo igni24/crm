@@ -1,5 +1,6 @@
 /* BOOTSTRAP */
 $transparent: rgba(255, 255, 255, 0);
+$blue: #007bff !default;
 $colors2: ();
 $colors2: map-merge((
 	"transparent": $transparent
@@ -22,3 +23,15 @@ $theme-colors2: map-merge((
 		}
 	}
 }
+
+%a {
+	color: $blue;
+	text-decoration: none;
+	background-color: transparent;
+
+	&:hover {
+	  color: darken($blue, 15%);
+	  text-decoration: none;
+	}
+  }
+  

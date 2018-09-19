@@ -1,0 +1,9 @@
+.help-block {
+    display: block;
+    margin-top: .25rem;
+    color: #6c757d;
+
+    a {
+        @extend %a;
+    }
+}

@@ -15,6 +15,18 @@ Route::get('/', function () {
 	return view('welcome');
 });
 
+Route::get('/test5', function () {
+	return view('test5');
+});
+Route::get('dynamicModal/{id}',[
+    'as'=>'dynamicModal',
+    'uses'=> 'testController@loadModal'
+]);
+
+Route::get('user/reset', function() {
+    return view('auth.passwords.reset');
+});
+
 Route::get('/ruta/{param}', function ($param) {
     return "hello world!".$param;
 });

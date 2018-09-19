@@ -20,7 +20,10 @@
 							</div>
 							<div class="form-group">
 								<label for="inputPassword" class="sr-only">Password</label>
-								<input type="password" id="loginPass" class="form-control" placeholder="Password" required="">
+								<input type="password" id="loginPass" class="form-control" placeholder="Password" required>
+								<small class="help-block">
+									<a href="#" data-toggle="modal" data-target="#exampleModal">Has olvidado tu contraseña?</a>
+								</small>
 							</div>
 							<div class="form-group form-check">
 								<input type="checkbox" id="loginRemember" value="" />
@@ -33,4 +36,27 @@
 			</div>
 		</div>
 	</div>
+
+	<div id="exampleModal" class="modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					modal example
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		// $('#exampleModal').modal("show")
+	</script>
 @endsection

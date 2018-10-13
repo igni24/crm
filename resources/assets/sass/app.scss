@@ -1,7 +1,9 @@
 // HELPERS
-@import "helpers/_variables";
-@import "helpers/_breakpoints";
 @import "helpers/_functions";
+@import "../../../public/lib/bootstrap/scss/functions";
+@import "helpers/_variables";
+@import "../../../public/lib/bootstrap/scss/variables";
+@import "helpers/_breakpoints";
 @import "helpers/_animations";
 
 // BASE
@@ -15,7 +17,10 @@
 
 // COMPONENTS
 @import "helpers/_utils";
+@import "components/_buttons";
+@import "components/_navbar";
 @import "components/_forms";
 
 // LAYOUTS
-@import "layout/_login";
+@import "layout/_home";
+@import "layout/backend/_login";

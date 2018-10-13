@@ -25,8 +25,13 @@ class ForgotPasswordController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
+    public function __construct() {
         $this->middleware('guest');
     }
+
+    // public function viewModal($id) {
+    //     $ifAnyData = "error";
+    //     return view('test5', ['data'=>$ifAnyData]);
+    //     // return view('auth.reset', ['data'=>$ifAnyData]);
+	// }
 }

@@ -21,7 +21,7 @@
         </div>
     </div>
 
-    <button data-toggle="modal" data-target="#view-modal" id="getUser" class="btn btn-sm btn-info" data-url="{{ route('dynamicModal, ')}}">Submit</button>
+    <button data-toggle="modal" data-target="#view-modal" id="getUser" class="btn btn-sm btn-info" data-url="{{ route('dynamicModal', ['id'=>$id])}}">Submit</button>
 
     <script>
         $(document).ready(function() {

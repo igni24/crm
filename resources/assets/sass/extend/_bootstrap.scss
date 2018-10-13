@@ -1,37 +1,42 @@
-/* BOOTSTRAP */
-$transparent: rgba(255, 255, 255, 0);
-$blue: #007bff !default;
-$colors2: ();
-$colors2: map-merge((
-	"transparent": $transparent
-), $colors2);
-$theme-colors2: ();
-$theme-colors2: map-merge((
-	"transparent": $transparent
-), $theme-colors2);
-
-@each $parent, $color in $theme-colors2 {
-	.bg-#{$parent} {
-		background-color: $color !important;
-	}
-
-	a.bg-#{$parent},
-	button.bg-#{$parent} {
-		&:hover,
-		&:focus {
-			background-color: darken($color, 10%) !important;
-		}
-	}
-}
-
 %a {
 	color: $blue;
 	text-decoration: none;
 	background-color: transparent;
 
 	&:hover {
-	  color: darken($blue, 15%);
-	  text-decoration: none;
+		color: darken($blue, 15%);
+		text-decoration: none;
 	}
-  }
-  
+}
+
+.carousel.carrousel-multiple {
+	> *,
+	.carousel-inner { background-color: inherit; }
+
+	.carousel-item.active,
+	.carousel-item-next,
+	.carousel-item-prev {
+		display: flex;
+		justify-content: space-between;
+		background-color: inherit;
+	}
+
+	.carousel-item-right.active,
+	.carousel-item-next { transform: translateX(25%); }
+
+	.carousel-item-left.active, 
+	.carousel-item-prev { transform: translateX(-25%); }
+
+	.carousel-item-right,
+	.carousel-item-left { transform: translateX(0); }
+}
+
+.card-deck.card-deck-separated {
+	margin-right: -30px;
+	margin-left: -30px;
+
+	.card {
+		margin-right: 30px;
+		margin-left: 30px;
+	}
+}

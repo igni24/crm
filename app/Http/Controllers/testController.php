@@ -14,6 +14,6 @@ class testController extends Controller {
 	}
 
 	public function loadModal($id) {
-		return view('ajax',['data'=>$ifAnyData]);
+		return view('auth.passwords.reset');
 	}
 }

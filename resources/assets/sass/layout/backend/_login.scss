@@ -4,12 +4,16 @@
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 
+	@include maxQuery("sm") {
+		background-size: auto 100%;
+	}
+
 	.align-items-center {
 		min-height: 100%;
 		background: linear-gradient(135deg, rgba(white, 0.4) 0%, rgba($color2, 0.6) 30%, rgba($color1, 1) 90%);
 
 		.card {
-			background-color: rgba($color2, 0.6);
+			background-color: rgba(white, 0.6);
 			box-shadow: 0 2px 5px 0 $grey;
 
 			img {

@@ -1,0 +1,29 @@
+// xs: 0,
+// sm: 576px,
+// md: 768px,
+// lg: 992px,
+// xl: 1200px
+
+@mixin minQuery($size) {
+	@if map-has-key($grid-breakpoints, $size) {
+		$breakpoint-value: map-get($grid-breakpoints, $size);
+		@media (min-width: $breakpoint-value) {
+			@content;
+		}
+	}
+}
+
+@mixin maxQuery($size) {
+	@if map-has-key($grid-breakpoints, $size) {
+		$breakpoint-names: map-keys($grid-breakpoints);
+		$n: index($breakpoint-names, $size);
+		$next: nth($breakpoint-names, $n + 1);
+		
+		@if($n < length($breakpoint-names)) {
+			$max: map-get($grid-breakpoints, $next);
+			@media (max-width: $max) {
+				@content;
+			}
+		}
+	}
+}

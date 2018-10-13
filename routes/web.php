@@ -15,9 +15,11 @@ Route::get('/', function () {
 	return view('welcome');
 });
 
+
 Route::get('/test5', function () {
-	return view('test5');
+	return view('test5', ['id' => 'Victoria']);
 });
+
 Route::get('dynamicModal/{id}',[
     'as'=>'dynamicModal',
     'uses'=> 'testController@loadModal'

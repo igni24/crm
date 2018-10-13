@@ -42,3 +42,37 @@ gulp.task("css", function() {
 	.pipe(gulp.dest("public/css"))
 	.pipe(browserSync.stream());
 });
+
+gulp.task("lib", ["cssLib"], function() {
+	browserSync.init({
+		proxy: "127.0.0.1:8000"
+	});
+
+	gulp.watch("resources/assets/sass/helpers/_variables.scss", ["cssLib"]);
+	gulp.watch("resources/assets/sass/helpers/_colors.scss", ["cssLib"]);
+});
+
+//Tarea para compilar archivos sass a css
+gulp.task("cssLib", function() {
+	return gulp.src("public/lib/scss/**/*.scss")
+	.pipe(plumber(function(error) {
+		gutil.log(gutil.colors.red(error.message));
+		this.emit("end");
+	}))
+	.pipe(sourcemaps.init())
+	.pipe(sass())//.on("error", notify.onError("Sass error"))
+	.pipe(autoprefixer({
+		browsers: ["last 10 versions"],
+		cascade: false
+	}))
+	.pipe(gulp.dest("public/css"))
+	.pipe(cssnano({
+		zindex: false
+	}))
+	.pipe(rename({
+		suffix: ".min"
+	}))
+	.pipe(sourcemaps.write("."))
+	.pipe(gulp.dest("public/css"))
+	.pipe(browserSync.stream());
+});

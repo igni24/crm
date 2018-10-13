@@ -1,0 +1,85 @@
+.home-header {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	background-image: url("#{$img}/landing.jpg");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	
+	@include maxQuery("sm") {
+		background-size: auto 100%;
+	}
+	
+	.hh-form {
+		height: 85%;
+		padding-top: 60px;
+
+		.card .card-body {
+			padding: 40px;
+
+			.card-title { margin-bottom: 1.5rem; }
+		}
+	}
+
+	.hh-subtitle,
+	.hh-title {
+		color: white;
+	}
+
+	.hh-partners {
+		height: 15%;
+		border-bottom: 1px solid $grey-3;
+		background-color: white;
+
+		* { height: 100%;}
+		
+		.hh-partner {
+			display: inline-block;
+			height: 100%;
+			padding: 5px 15px;
+			text-align: center;
+			background-color: inherit;
+			
+			img {
+				height: 100%;
+				filter: grayscale(100%);
+				transition: filter 0.5s;
+			}
+			
+			&:hover img {
+				filter: grayscale(0%);
+			}
+		}
+
+		.container {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	}
+}
+
+.home-features,
+.home-workflow {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.home-features {
+	.card-deck .card {
+		border: 0;
+		background-color: transparent;
+
+		object {
+			width: 30%;
+			margin-bottom: 1.5rem;
+		}
+	}
+}
+
+.home-workflow {
+	.row {
+		margin-bottom: 2.5rem;
+
+		&:last-child { margin-bottom: 0; }
+	}
+}
